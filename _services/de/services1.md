@@ -1,6 +1,6 @@
 ---
 title: "services 1 de"
-image: "/services/default.png"
+image: "/images/services/default.jpg"
 ---
 
 #lorem

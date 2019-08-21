@@ -23,10 +23,9 @@ excerpt: Description goes here
                     <!-- start .single-product -->
                     <div class="product product--card">
                         <div class="product__thumbnail">
-                            <img src="/assets/images/p1.jpg" alt="Product Image">
+                            <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="Product Image">
                             <div class="prod_btn">
-                                <a href="single-product.html" class="transparent btn--sm btn--round">More Info</a>
-                                <a href="single-product.html" class="transparent btn--sm btn--round">Live Demo</a>
+                                <a href="#" class="transparent btn--sm btn--round text-center">More Info</a>
                             </div>
                             <!-- end /.prod_btn -->
                         </div>
@@ -38,7 +37,7 @@ excerpt: Description goes here
                             <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
                         </div>
                         <!-- end /.product-desc -->
-                        <div class="product-purchase">
+                        <!-- <div class="product-purchase">
                             <div class="price_love">
                                 <span>$10 - $50</span>
                                 <p>
@@ -50,7 +49,7 @@ excerpt: Description goes here
                                     <span>16</span>
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- end /.product-purchase -->
                     </div>
                     <!-- end /.single-product -->

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-{% include topcomment.html %}
 <html lang="{{ site.lang }}">
 {% include head.html %}
 
 <body>
     <!-- Page Wrapper -->
-    <div id="preload {% if page.layout == 'default' %}
-        home2 single-vendor {% else %} body {% endif %}">
+    <div id="preload home2 single-vendor">
         {% include header.html %}
         {{ content }}
         {% include footer.html %}

@@ -67,3 +67,9 @@ defaults:
       path: _services
     values:
       layout: services
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - github-pages
