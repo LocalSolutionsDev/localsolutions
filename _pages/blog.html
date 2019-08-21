@@ -1,0 +1,38 @@
+---
+key: 5
+title: Blog
+permalink: /blog/
+excerpt: The Blog&mdash;things I enjoyed creating and sharing
+image: pic02.jpg
+background-image: pic02.jpg
+---
+  {% if site.social.youtube %}
+    <div class="table-wrapper">
+      <table class="alt"><tbody><tr><td style="text-align: center;">Visit my
+      <a target="_blank" href="{{ site.social.youtube }}">Youtube profile</a></td>
+      </tr></tbody></table>
+    </div>
+  {% endif %}
+
+  {% if site.categories.blog %}
+  <div class="table-wrapper">
+    <table>
+      <tbody>
+        {% include fn_groupsort_reverse.html unsorted=site.categories.blog groupby='priority' sortby='date' %}
+        {% for blog in sorted_list %}
+        <tr>
+          <td><b><a href="{{ blog.url | prepend: site.baseurl }}">{{ blog.title }}</a></b></td>
+          <td>{{ blog.date | date: "%b %Y" }}</td>
+          <td>{{ blog.excerpt | strip_html | truncatewords: 12 }}</td>
+          <td>
+            {% include techlist.html %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% if site.works_in_progress %}
+    <div class="works_inprogress">In-progress, more to come.</div>
+  {% endif %}
+{% endif %}

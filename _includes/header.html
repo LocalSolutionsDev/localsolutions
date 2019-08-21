@@ -1,0 +1,45 @@
+<!--================================
+        START MENU AREA
+=================================-->
+<!-- start menu-area -->
+<div class="menu-area">
+
+    <!-- start .mainmenu_area -->
+    <div class="mainmenu">
+        <!-- start .container -->
+        <div class="container">
+            <!-- start .row-->
+            <div class="row">
+                <!-- start .col-md-3 -->
+                <div class="col-lg-3 col-md-3 col-6 v_middle">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="{{ "/images/logo.png" | prepend: site.baseurl | prepend: site.url }}" alt="logo image" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <!-- end /.col-md-3 -->
+
+                <!-- start .col-md-5 -->
+                <div class="col-lg-8 offset-lg-1 col-md-9 col-6 v_middle">
+                    <nav class="navbar navbar-expand-md navbar-light mainmenu__menu">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        {% include menu.html %}
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                </div>
+                <!-- end /.col-md-5 -->
+            </div>
+            <!-- end /.row-->
+        </div>
+        <!-- start .container -->
+    </div>
+    <!-- end /.mainmenu-->
+</div>
+<!-- end /.menu-area -->
+<!--================================
+        END MENU AREA
+=================================-->
