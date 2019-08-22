@@ -340,12 +340,12 @@
     background: linear-gradient(to left, #0030de, #0030de);
     top: 0;
     left: 0;
-    opacity: 0.8;
+    opacity: 0.4;
   }
   &.hero--1{
   	&:before{
   		@include gradient;
-  		opacity: .9;
+  		opacity: 0.2;
   	}
   }
   .hero-content{
@@ -1353,7 +1353,7 @@ span.counter {
     width: 100%;
     position: absolute;
     @include gradient;
-    opacity: 0.91;
+    opacity: 0;
     top: 0;
     left: 0;
   }
