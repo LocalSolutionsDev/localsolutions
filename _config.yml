@@ -11,7 +11,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 about:  about the author
 owner:
   name: LocalSolutionsDev # or company name
-  url: "https://LocalSolutionsDev.github.io/" # your URL
+  url: "https://LocalSolutionsDev.github.io" # your URL
 copyright:
   en: "&copy; 2019 <a href='#'>LocalSolutionsDev</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
   de: "&copy; 2019 <a href='#'>LocalSolutionsDev</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
