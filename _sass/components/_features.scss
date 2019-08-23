@@ -12,13 +12,13 @@
 .feature{
   text-align: center;
   padding: 40px 25px;
+  box-shadow: 0 2px 40px rgba(0,0,0,0.08);
   .feature__title{
     padding-top: 30px;
     padding-bottom: 24px;
   }
   &:hover{
-    box-shadow: 0 2px 50px rgba(0,0,0,0.08);
-    transition: $transition;
+    box-shadow: 0 2px 100px rgba(0,0,0,0.08);
   }
 }
 

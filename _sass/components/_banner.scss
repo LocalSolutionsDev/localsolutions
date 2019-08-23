@@ -4,11 +4,21 @@
 	--- Banner
 *****************************/
 .banner-area{
-  @extend .search-area2;
-  padding-top: 52px!important;
+  padding-top: 85px!important;
   padding-bottom: 50px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-position-x: 0px;
+  background-position-y: 100%;
+  background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: scroll;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: transparent;
+  min-height: 144px;
+  img {
+    width: 100%;
+  }
   .banner ul li a{
     line-height: initial;
   }

@@ -31,8 +31,8 @@ permalink: index
                         </div>
                         <!-- start .hero__btn-area-->
                         <div class="hero__btn-area">
-                            <a href="#" class="btn btn--round btn--lg">View All Publication</a>
-                            <a href="#" class="btn btn--round btn--lg">Popular Services</a>
+                            <a href="#about-me" class="btn btn--round btn--lg">About Me</a>
+                            <a href="#" class="btn btn--round btn--lg">Contact Me</a>
                         </div>
                         <!-- end .hero__btn-area-->
                     </div>
@@ -127,24 +127,25 @@ permalink: index
 <!--================================
         END FEATURE AREA
     =================================-->
-
-<section class="banner-area" style="background-image: url('{{ site.baseurl }}/images/2019-Speaker-Banner-800x85.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <a href="#" class="btn btn--lg btn--round btn--white">View all talks</a>
-                </div>
-                <!-- end /.col-md-12 -->
-            </div>
-            <!-- end /.row -->
-        </div>
-        <!-- end /.container -->
+<a href="#" >
+    <section class="banner-area" style="background-image: url('{{ site.baseurl }}/images/2019-Speaker-Banner-800x85.jpg');">
     </section>
+</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a href="#" class="btn btn--lg btn--round btn--white">View all talks</a>
+        </div>
+        <!-- end /.col-md-12 -->
+    </div>
+    <!-- end /.row -->
+</div>
+<!-- end /.container -->
 
 <!--================================
         START OVERVIEW AREA
     =================================-->
-<section class="overview-area section--padding">
+<section class="overview-area section--padding" id="about-me">
     <!-- start container -->
     <div class="container">
         <!-- start row -->
@@ -163,13 +164,15 @@ permalink: index
             <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                 <div class="overview-icon">
                     <img src="{{ "/images/Robert-Marz.jpeg" | prepend: site.baseurl | prepend: site.url }}" alt="Robert Marz">
+                    <span>Robert.Marz@its-people.de</span>
+                    <p>@RobbieDatabee</p>
                 </div>
             </div>
             <!-- end /.col-md-4 -->
             <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
                 <p>Robert Marz is an Oracle ACE and member of its-people GmbH, a Germany based professional services company.</p>
 
-                <p>At customer sites, he works as a Senior Technical Architect with a database-centric view of the world.
+                <p>At customer sites, he works as a Senior Technical Architect with a database-centric view of the world.</p>
 
                 <p>Robert is Portfolio Manager Database Technologies at its-people. At DOAG (the German Oracle user group), he is in charge of the Cloud topics inside the database community.</p>
 
@@ -184,6 +187,18 @@ permalink: index
             <!-- end /.col-md-5 -->
         </div>
         <!-- end /.row -->
+        <div class="row m-5">
+            <div class="col-md-4 v_middle">
+                <img src="{{ "/images/O_ACELogo_clr.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-4 v_middle">
+                <img src="{{ "/images/logo-its-people.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-4 v_middle">
+                <img src="{{ "/images/CarajanDB.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- end /.row -->
     </div>
     <!-- end /.container -->
 </section>
@@ -195,7 +210,7 @@ permalink: index
     =================================-->
 <section class="call-to-action bgimage">
     <div class="bg_image_holder">
-        <img src="{{ "/images/calltobg.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="">
+        <img src="{{ "/images/2019-07-Mt-Rainier.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="">
     </div>
     <div class="container content_above">
         <div class="row">
