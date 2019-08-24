@@ -4,17 +4,13 @@ title: Services
 permalink: /services/
 excerpt: Description goes here
 ---
-<section class="section--padding2 bgcolor">
+<section class="bgcolor">
     <div class="shortcode_wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="shortcode_module_title">
-                        <div class="dashboard__title">
-                            <h1> Our Services </h1>
-                            <h3> Here you can read upon on services</h3>
-                        </div>
-                    </div>
+                <div class="col-md-12 text-center p-4">
+                    <h1> Our Services </h1>
+                    <h3> Here you can read upon on services</h3>
                 </div>
             </div>
             <div class="row">
@@ -29,7 +25,7 @@ excerpt: Description goes here
                     <!-- start .single-product -->
                     <div class="product product--card3">
                         <div class="product__thumbnail">
-                            <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="Product Image">
+                            <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="Image">
                         </div>
                         <!-- end /.product__thumbnail -->
                         <div class="product-desc">
@@ -38,26 +34,14 @@ excerpt: Description goes here
                             </a>
                             <p>{{ service.content | markdownify | strip_html | truncate: 70 }}</p>
                         </div>
-                        <div class="text-center p-2">
-                            <a href="#" class="btn btn--lg btn--round btn--white">Read me</a>
+                        <div class="text-left p-2">
+                            <a href="{{site.baseurl}}{{ service.url }}" class="btn btn--default btn--round btn--white">Read more</a>
                         </div>
                     </div>
                     <!-- end /.single-product -->
                 </div>
                 <!-- end /.col-md-4 -->
                 {% endfor %}
-            </div>
-            <!-- end .row -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="shortcode_module_title">
-                        <div class="dashboard__title">
-                            <div class="text-center">
-                                <a href="#" class="btn btn--lg btn--round btn--dark">Contact</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <!-- end .row -->
         </div>

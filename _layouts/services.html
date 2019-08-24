@@ -1,5 +1,24 @@
 ---
 layout: default
 ---
-
-{{ content }}
+<section class="bgcolor">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-1">
+                <div class="single_blog blog--default">
+                    <article>
+                        <figure>
+                            <img src="{{ page.image | prepend: site.baseurl | prepend: site.url }}" alt="Image">
+                        </figure>
+                        <div class="blog__content">
+                            <h4>{{ page.title }}</h4>
+                        </div>
+                        <div class="single_blog_content">
+                            {{ content }}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

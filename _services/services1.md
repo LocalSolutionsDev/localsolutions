@@ -1,6 +1,6 @@
 ---
 title: "services 1"
-image: "/images/services/default.jpg"
+image: "/images/services/workshop-2209239_1920.jpg"
 ---
 
 ## lorem

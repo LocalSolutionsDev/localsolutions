@@ -101,7 +101,7 @@ permalink: index
             <!-- end /.col-md-5 -->
         </div>
         <!-- end /.row -->
-        <div class="row m-5">
+        <div class="row">
             <div class="col-md-4 v_middle">
                 <img src="{{ "/images/O_ACELogo_clr.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" class="img-fluid">
             </div>
@@ -123,7 +123,7 @@ permalink: index
 <!--================================
         START FEATURE AREA
     =================================-->
-<section class="features section--padding">
+<section class="feature_start section--padding">
     <!-- start container -->
     <div class="container">
         <div class="row">
@@ -198,27 +198,33 @@ permalink: index
 <!--================================
         END FEATURE AREA
     =================================-->
-<a href="#" >
-    <section class="banner-area" style="background-image: url('{{ site.baseurl }}/images/2019-Speaker-Banner-800x85.jpg');">
-    </section>
-</a>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <a href="#" class="btn btn--lg btn--round btn--white">View all talks</a>
-        </div>
-        <!-- end /.col-md-12 -->
+
+<!--================================
+        START CALL TO ACTION AREA
+    =================================-->
+<section class="call-to-action bgimage">
+    <div class="bg_image_holder">
+        <img src="{{ "/images/2019-07-Seattle.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="">
     </div>
-    <!-- end /.row -->
-</div>
-<!-- end /.container -->
-
-
-
-    <!--================================
+    <div class="container content_above">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="call-to-wrap">
+                    <h1 class="text--white">About my Skills and Experiences</h1>
+                    <h4 class="text--white">Read about my skills and experience</h4>
+                    <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">View my Skills and Experiences</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================================
+        END CALL TO ACTION AREA
+    =================================-->
+<!--================================
         START FEATURE AREA
     =================================-->
-<section class="features section--padding">
+    <section class="features section--padding">
     <!-- start container -->
     <div class="container">
         <div class="row">
@@ -234,56 +240,22 @@ permalink: index
         </div>
         <!-- start row -->
         <div class="row">
-            <!-- start search-area -->
-            <div class="col-lg-4">
-                <div class="feature">
-                    <div class="feature__img">
-                        <img src="{{ "/images/feature1.png" | prepend: site.baseurl | prepend: site.url }}" alt="feature">
+            {% for service in site.services %}
+                <div class="col-lg-4">
+                    <div class="feature">
+                        <div class="feature__img">
+                            <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="">
+                        </div>
+                        <div class="feature__title">
+                            <h3>{{ service.title }}</h3>
+                        </div>
+                        <div class="feature__desc">
+                            <p>{{ service.content | markdownify | strip_html | truncate: 70 }}</p>
+                        </div>
                     </div>
-                    <div class="feature__title">
-                        <h3>Services 1</h3>
-                    </div>
-                    <div class="feature__desc">
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
+                    <!-- end /.feature -->
                 </div>
-                <!-- end /.feature -->
-            </div>
-            <!-- end /.col-md-4 -->
-            <!-- start search-area -->
-            <div class="col-lg-4">
-                <div class="feature">
-                    <div class="feature__img">
-                        <img src="{{ "/images/feature1.png" | prepend: site.baseurl | prepend: site.url }}" alt="feature">
-                    </div>
-                    <div class="feature__title">
-                        <h3>Services 2</h3>
-                    </div>
-                    <div class="feature__desc">
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                </div>
-                <!-- end /.feature -->
-            </div>
-            <!-- end /.col-md-4 -->
-            <!-- start search-area -->
-            <div class="col-lg-4">
-                <div class="feature">
-                    <div class="feature__img">
-                        <img src="{{ "/images/feature1.png" | prepend: site.baseurl | prepend: site.url }}" alt="feature">
-                    </div>
-                    <div class="feature__title">
-                        <h3>Services 3</h3>
-                    </div>
-                    <div class="feature__desc">
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                </div>
-                <!-- end /.feature -->
-            </div>
+            {% endfor %}
             <!-- end /.col-md-4 -->
         </div>
         <!-- end /.row -->
@@ -292,26 +264,4 @@ permalink: index
 </section>
 <!--================================
         END FEATURE AREA
-    =================================-->
-<!--================================
-        START CALL TO ACTION AREA
-    =================================-->
-<section class="call-to-action bgimage">
-    <div class="bg_image_holder">
-        <img src="{{ "/images/2019-07-Seattle.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="">
-    </div>
-    <div class="container content_above">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="call-to-wrap">
-                    <h1 class="text--white">About my Skills and Experiences</h1>
-                    <h4 class="text--white">Read about my skills and experience</h4>
-                    <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">View the Skills and Experiences</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--================================
-        END CALL TO ACTION AREA
     =================================-->
