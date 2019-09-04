@@ -1,0 +1,41 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+# Menu
+languages:
+  - language: "en"
+    links:
+    - title: "Home"
+      url: /
+    - title: "Skills"
+      url: /skills/
+    - title: "Projects"
+      url: /projects/
+    - title: "Experiences"
+      url: /experiences/
+    - title: "Services"
+      url: /services/
+    - title: "Experiences"
+      url: /skills/
+    - title: "Publications"
+      url: /publications/
+    - title: "de"
+      url: /de/
+  - language: "de"
+    links:
+    - title: "Home"
+      url: /
+    - title: "Skills"
+      url: /skills/
+    - title: "Projekte"
+      url: /projekte/
+    - title: "erfahrungen"
+      url: /erfahrungen/
+    - title: "Services"
+      URL: /services/
+    - title: "Experiences"
+      URL: /skills/
+    - title: "Veröffentlichungen"
+      URL: /publications/
+    - title: "en"
+      url: /

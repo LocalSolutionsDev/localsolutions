@@ -1,14 +1,18 @@
 # Site settings
-
-title: LocalSolutionsDev
+title:
+  en: LocalSolutionsDev
+  de: LocalSolutionsDev
 email: LocalSolutionsDev@damain.com
 mobile: +63 256324125
 favicon: /images/favicon.png
 logo:
 footer_logo:
-description: >- # this means to ignore newlines until "baseurl:"
-  description goes here
-about:  about the author
+description:
+  en: content
+  de: content
+about:
+  en: about the author
+  de: about the author
 owner:
   name: LocalSolutionsDev # or company name
   url: "https://LocalSolutionsDev.github.io" # your URL
@@ -20,6 +24,9 @@ baseurl: "/localsolutions" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
+index:
+  en:
+  de: indexde.html
 
 # Language Setting
 lang: en
@@ -44,7 +51,9 @@ social:
 
 # Build settings
 permalink: pretty
-markdown: kramdown
+kramdown:
+  # parse markdown inside block-level HTML tag
+  parse_block_html: true
 
 sass:
   sass_dir: _sass

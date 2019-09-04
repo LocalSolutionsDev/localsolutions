@@ -1,0 +1,18 @@
+{% for item in site.data.project.languages %}
+{% if item.language == page.lang %}
+{% for pj in item.projects %}
+<table class="table table-bordered">
+    <tbody>
+    	<tr>
+            <td style="width: 50%"> {{ pj.duration }} </td>
+            <td style="width: 50%"> {{ pj.position }}  </td>
+        </tr>
+        <tr>
+            <td style="width: 50%"> {{ pj.details }} </td>
+            <td style="width: 50%"> {{ pj.summary }}  </td>
+        </tr>
+    </tbody>
+</table>
+{% endfor %}
+{% endif %}
+{% endfor %}

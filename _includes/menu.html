@@ -1,24 +1,18 @@
+{% for item in site.data.navigation.languages %}
+{% if item.language == page.lang %}
+{% for link in item.links %}
+{% if link.url contains "http" %}
+{% assign url = link.url %}
+{% else %}
+{% assign url = link.url | relative_url %}
+{% endif %}
 <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
         <li>
-            <a href="{{site.baseurl}}/">Home</a>
+            <a href="{{ url }}">{{ link.title }}</a>
         </li>
-        <li>
-            <a href="#">Skills</a>
-        </li>
-        <li>
-            <a href="#">Projects</a>
-        </li>
-        <li>
-            <a href="#">Experiences</a>
-        </li>
-        <li>
-            <a href="{{site.baseurl}}/services/">Services</a>
-        </li>
-        <li>
-            <a href="#">Publications</a>
-        </li>
-        <li>
-        </li>
-    </ul>
-</div>
+        </ul>
+    </div>
+{% endfor %}
+{% endif %}
+{% endfor %}
