@@ -3,7 +3,7 @@ layout: page
 title: Projekte
 ref: projects
 lang: de
-permalink: /projekte/
+permalink: /de/projects/
 excerpt: MY Projekte
 ---
 

@@ -68,14 +68,19 @@ collections:
     permalink: /services/:path/
 
 defaults:
-  - scope:
-      path: _pages
-    values:
-      layout: page
-  - scope:
-      path: _services
-    values:
-      layout: services
+    -
+     scope:
+         path: ""
+     values:
+         layout: post
+         lang: en
+         base-url: "/"
+    -
+     scope:
+         path: de
+     values:
+         lang: de
+         base-url: "/de/"
 
 
 # Plugins

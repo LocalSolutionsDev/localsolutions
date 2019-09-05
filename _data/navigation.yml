@@ -15,10 +15,10 @@ languages:
       url: /experiences/
     - title: "Services"
       url: /services/
-    - title: "Experiences"
-      url: /skills/
     - title: "Publications"
       url: /publications/
+    - title: "Talks"
+      url: /talks/
     - title: "de"
       url: /de/
   - language: "de"
@@ -26,16 +26,16 @@ languages:
     - title: "Home"
       url: /
     - title: "Skills"
-      url: /skills/
+      url: /de/skills/
     - title: "Projekte"
-      url: /projekte/
-    - title: "erfahrungen"
-      url: /erfahrungen/
+      url: /de/projects/
+    - title: "Erfahrungen"
+      url: /de/experiences/
     - title: "Services"
-      URL: /services/
-    - title: "Experiences"
-      URL: /skills/
+      url: /de/services/
     - title: "Veröffentlichungen"
-      URL: /publications/
+      url: /de/publications/
+    - title: "Talks"
+      url: /de/talks/
     - title: "en"
       url: /

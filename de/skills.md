@@ -3,77 +3,40 @@ layout: page
 title: Skills
 ref: skills
 lang: de
-permalink: /skills/
+permalink: /de/skills/
 excerpt: MY skillsets
 ---
-## Branchenkenntnisse
-
-| Branchenkenntnisse 				|									|
-| :---               				|     :---      					|
-| * ~~Automobilbranche~~  			| * Anlagenbau     					|
-| * ~~Banken~~ 						| * Bahn      						|
-| * ~~Banken~~						| * ~~Beratungsunternehmen~~ 		|
-| * Biotechnologie					| * ~~Chemie~~						|
-| * Dienstleistung					| * ~~EDV-Dienstleistungen~~		|
-| * ~~Finanzdienstleistung~~ 		| * ~~Forschungsinstitut~~			|
-| * Industrie						| * ~~Informations Technologie~~	|
-| * ~~Informations Technologie~~ 	| * Logistik						|
-| * ~~Medien~~						| * Pharmaindustrie					|
-| * ~~Rechtswesen~~					| * ~~Softwarehaus~~				|
-| * ~~Sonstige~~					| * Telekommunikation				|
-| * Transportwesen					| * Verlagswesen					|
-| * Großhandel						|									|
 
 
-## Kenntnisse
-Legende: Expertise-Level (Basiswissen, Professional, Experte), Berufserfahrung Jahre, zuletzt verwendet
+## Robert Marz
 
-| Betriebssysteme 						|										|
-| :---               					|     :---      						|
-| * Linux (Experte,>10,~~2014~~ 2016)	| * ~~Unix (Experte,>10,2014)~~ 		|
-| * Windows (Experte,>10,~~2014~~ 2016)	| * ~~HP-UX (Professional,> 5,2002)~~	|
-| * ~~Sun Solaris (Experte,> 4,2006)~~	|										|
+	Profilnummer		:		10157
+	Jahrgang		:		1971
+	DV-Erfahrung seit	:		1994
+	Verfügbar ab		:		1.1.2015
 
+## Kontakt
 
-| Sprachen 										|											|
-| :---               							|     :---      							|
-| * Shell-Scripts (Experte,>10,~~2014~~ 2016)	| * SQL (Experte,>10,~~2014~~ 2016) 		|
-| * JavaScript (Professional,> 9,~~2014~~ 2016)	| * PL/SQL (Experte,> 10,~~2014~~ 2016) 	|
-| * Node.js										| * XML										|
-| * UML											| * JSON 									|
+	its-people GmbH
+    Lyoner Straße 44-48
+    60528 Frankfurt am Main
 
 
-| Datenbanken |	|
-| :---  | :--- |
-| * Oracle (Experte,> 10,2016~~2014~~) | |
+    Telefon: +49 69 2475210-0
+    Telefax: +49 69 2475210-21
+    E-Mail: frankfurt@its-people.de
+    Homepage: [www.its-people.de](http://www.its-people.de/)
 
-| Tools 										|											|
-| :---               							|     :---      							|
-| * VMWare (Professional,> ~~8~~ 9,~~2014~~ 2016)	| * XEN (Professional,> 810,20142016)		|
-| * Oracle ~~JDeveloper~~ SQLDeveloper (Professional,> 7,~~2014~~ 2016)	| * Subversion (Professional,> ~~7~~ 9,~~2014~~ 2016)	|
-| * Oracle ~~Discoverer~~ SQLcl (Professional,> 41,~~2009~~ 2016)| * Business ObjectsGit (Professional,> ~~2~~ 3,~~2009~~ 2016)|
-| * ~~Oracle Application Server~~| * ~~Oracle Forms~~ |
+## Kernkompetenzen
 
+IT-Architekt mit Schwerpunkt Datenbanken, Infrastruktur und Data Warehousing.
 
-| Netzwerk 										|											|
-| :---               							|     :---      							|
-| * Firewall (Professional,>10,~~2014~~ 2016)	| * Samba (Experte,> ~~7~~ 10,~~2014~~ 2016) 		|
-| * TCP/IP (Experte,>10,~~2014~~ 2016)	| |
+Robert Marz ist als IT-Architekt mit Schwerpunkt Datenbanken, Infrastruktur und Data Warehousing langjähriges Mitglied und Gesellschafter des its-people Verbundes.
 
+Er verfügt über umfangreiche Kenntnisse von modernen Systemarchitekturen und deren Anwendungs-möglichkeiten mit dem Schwerpunkt Oracle Datenbank   Technologien. Ebenso ist er versiert im Bereich ~~Server~~ Cloud, Betriebssysteme, Hochverfügbarkeitslösungen und IT-Security.
 
-| Sonstiges |	|
-| :---  | :--- |
-| * ~~Olap (Experte,> 9,2014)~~ | * Oracle RAC (Professional,> 6,2014)|
-| * MS-SQL-Server| * ~~Oracle Reports (Professional,> 6,2008)~~ |
-| * Data Warehouse (Experte,> 10,2014)| * ~~MS-Navision~~ |
-| * Custom Development (Experte,>10,2014)| |
+Robert Marz ist erfahren in Projektmanagement, Coaching sowie dem Führen kleiner und mittlerer Gruppen bis zu einer Teamstärke von 10 Personen.
 
-## Aus- und Weiterbildung
+Er nutzt hierbei seine ausgeprägte analytische Begabung zur Identifikation kritischer Erfolgsfaktoren und sorgt mit Brillanz und Humor für deren Umsetzung im Projekt. Seine technische Expertise verbindet er mit hohem persönlichen Engagement, ausgeprägter Zielorientierung und Stärken in der Umsetzung.
 
-Ausbildung
-* (Studium der Informatik an der Akademie für Datenverarbeitung, Böblingen)
-
-## Fremdsprachen
-
-* Englisch(Experte, >10,2016 ~~2014,>10,Professional~~ )
-
+Robert Marz trägt zusätzlich zu seiner erfolgreichen Tätigkeit als Senior Professional die Verantwortung als Portfolio Manager für die Weiterentwicklung des Portfoliobereiches "Datenbanken" innerhalb des its-people Verbundes. __Als aktives Mitglied der Deutschen Oracle Anwender Gruppe (DOAG) verantwortet er das Thema Cloud-Computing innerhalb der Datenbank-Community.__ Er veröffentlicht Fachbeiträge in Publikationen ~~und war mehrfach erfolgreich auf der jährlich stattfindenden Konferenz der Deutschen Oracle Anwender Gruppe (DOAG)~~ __und ist regelmäßig auf nationalen und internationalen Konferenzen__ mit interessanten Fachvorträgen vertreten.

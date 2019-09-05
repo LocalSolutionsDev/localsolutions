@@ -13,7 +13,7 @@
                 <!-- start .col-md-3 -->
                 <div class="col-lg-3 col-6 v_middle p-2">
                     <div class="logo">
-                        <a href="{{ site.baseurl }}/">
+                        <a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">
                             <img src="{{ "/images/Databee-Logo.jpg" | prepend: site.baseurl }}" alt="logo image" class="img-fluid">
                         </a>
                     </div>
@@ -28,6 +28,13 @@
                         </button>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         {% include menu.html %}
+                        <div class="wrapper" style="text-align: right; line-height: 2em">
+						  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+						  {% for post in posts %} <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">{{ post.lang }}</a> {% endfor %}
+
+						  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+						  {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %}
+						</div>
                         <!-- /.navbar-collapse -->
                     </nav>
                 </div>

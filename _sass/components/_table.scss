@@ -1,30 +1,62 @@
 // this file contains the style for table component
 /*****************************
-	-- TABLE
+  -- TABLE
 *****************************/
 @import "../common/theme";
-table{
-  thead{
-    padding: 33px 25px 30px;
-    border-bottom: 1px solid #ececec;
-    >tr {
-      >th {
-        color: #000;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 10px 0 10px 20px;
-      }
+$spacer:1rem;
+$table-bg: white;
+$table-cell-padding: .75rem;
+$table-border-width: 1px;
+$table-border-color: #dee2e6;
+$table-cell-padding-sm: 10px;
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $spacer;
+  background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+  border: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: top;
+    border: $table-border-width solid $table-border-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: (2 * $table-border-width) solid $table-border-color;
+  }
+
+  td {
+    width: 50%;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: (2 * $table-border-width);
     }
   }
 
-  tbody{
-    >tr{
-      >td{
-        padding: 10px 0 10px 15px;
-        font-size: 16px;
-        vertical-align: middle;
-        color: #333;
-      }
-    }
+  tbody + tbody {
+    border-top: (2 * $table-border-width) solid $table-border-color;
+  }
+
+  table {
+    background-color: $table-bg;
+  }
+}
+
+
+//
+// Condensed table w/ half padding
+//
+
+table-sm {
+  th,
+  td {
+    padding: $table-cell-padding-sm;
   }
 }
