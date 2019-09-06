@@ -19,12 +19,10 @@ languages:
       url: /publications/
     - title: "Talks"
       url: /talks/
-    - title: "de"
-      url: /de/
   - language: "de"
     links:
     - title: "Home"
-      url: /
+      url: /de/
     - title: "Skills"
       url: /de/skills/
     - title: "Projekte"
@@ -37,5 +35,3 @@ languages:
       url: /de/publications/
     - title: "Talks"
       url: /de/talks/
-    - title: "en"
-      url: /
