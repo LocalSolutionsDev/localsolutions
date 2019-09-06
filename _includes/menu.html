@@ -14,5 +14,13 @@
         {% endfor %}
 		{% endif %}
 		{% endfor %}
+
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+        <li class="flag-lang-{{ page.lang }}">
+            <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}"></a>
+        </li>
+        {% endfor %}
+
         </ul>
     </div>

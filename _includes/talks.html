@@ -1,8 +1,61 @@
-<ul>
-{% for talk in site.data.talks %}
-  <li>
-      {{ talk.name }}
-      {{ talk.date }}
-  </li>
+{% for item in site.data.talks.languages %}
+{% if item.language == page.lang %}
+<section id="archive card--category">
+{% assign postsByYear = item.talks | group_by_exp:"talks", "talks.date | date: '%Y'"  %}
+{% for year in postsByYear %}
+    {% capture spaceless %}
+      {% assign current_year = 'now' | date: '%Y' %}
+      {% assign year_text = nil %}
+
+      {% if year.name == current_year %}
+        {% assign year_text = year.name | prepend: "This year's talks (" | append: ')' %}
+      {% else %}
+        {% assign year_text = year.name %}
+      {% endif %}
+    {% endcapture %}
+
+    <div class ="anchor-target archive-year"
+         id="{{ year.name }}">{{ year_text }}</div>
+
+
+  <div class="row">
+  {% assign postsByMonth = year.items | group_by_exp:"talks", "talks.date | date: '%m'" | sort: 'name' | reverse %}
+  {% for month in postsByMonth %}
+    <div class="col-lg-12">
+
+      <div class="card mb-3">
+        <div class="card-header bg-stripe-zero text-dark pb-0">
+          {% for talk in month.items limit:1 %}
+            <p class="anchor-target card-title"
+               id="{{ talk.date | date: '%Y-%m' }}"
+               >{{ talk.date | date: '%B - %Y' }}</p>
+          {% endfor %}
+        </div>
+        <div class="card-body py-2">
+
+          <div class="archive-list pl-3">
+            {% for talk in month.items %}
+            <div class="archive-item d-flex flex-row-reverse">
+              <div class="text-left text-nowrap">
+                  <time class="float-left">{{ talk.date | date:"%d %B" }}&nbsp;
+              </div>
+              <div class="mr-auto">
+                    {% if talk.activity %} <p class="font-weight-bold mt-2">{{ talk.activity }}</p> {% endif %}
+                    {% if talk.name %} <p> {{ talk.name }}</p> {% endif %}
+                    {% if talk.event %} <p class="m-0">Event Name - {{ talk.event }}</p> {% endif %}
+                    {% if talk.description %} <p class="m-0">Description - {{ talk.description }}</p> {% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+  </div>
 {% endfor %}
-</ul>
+</section>
+{% endif %}
+{% endfor %}
