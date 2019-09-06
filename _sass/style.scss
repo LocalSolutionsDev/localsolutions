@@ -210,6 +210,19 @@
     text-transform: uppercase;
   }
 }
+
+.flag-lang-de::before {
+  content: url(../de.svg);
+  width: 34px;
+  display: block;
+}
+
+.flag-lang-en::before {
+  content: url(../en.svg);
+  width: 34px;
+  display: block;
+}
+
 .mainmenu__search{
   float: right;
   padding: 12px 0;
@@ -5988,6 +6001,11 @@ span.counter {
   }
 }
 
+.flag-lang{
+  background: no-repeat 6px center;
+  width: 34px;
+  display: block;
+}
 
 
   /***************************************
