@@ -17,9 +17,16 @@
 
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for page in pages %}
-        <li class="flag-lang-{{ page.lang }}">
-            <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}"></a>
+        <li>
+        	<a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
+              {% if page.lang == 'en' %}
+              <span class="flag-icon flag-icon-um"></span>
+            {% else %}
+              <span class="flag-icon flag-icon-de"></span>
+               {% endif %}
+           </a>
         </li>
+
         {% endfor %}
 
         </ul>
