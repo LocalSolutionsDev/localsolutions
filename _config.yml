@@ -53,7 +53,7 @@ social:
 permalink: pretty
 kramdown:
   # parse markdown inside block-level HTML tag
-  parse_block_html: true
+  # parse_block_html: true
 
 sass:
   sass_dir: _sass
@@ -63,9 +63,14 @@ exclude: ["LICENSE.txt", "README.md"]
 include: ['_pages']
 
 collections:
+  project:
+    output: true
+  talks:
+    output: true
   services:
     output: true
-    permalink: /services/:path/
+  publications:
+    output: true
 
 defaults:
     -

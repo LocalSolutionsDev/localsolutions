@@ -1,9 +1,9 @@
 ---
 layout: detail
-title: "Leistung 1"
-image: "/images/services/server-2160321_1920.jpg"
-ref: services1
-lang: de
+title: "Publications 2"
+image: "/images/services/startup-593343_1920.jpg"
+ref: publications2
+lang: en
 ---
 
 # lorem

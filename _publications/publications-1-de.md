@@ -1,8 +1,9 @@
 ---
-title: "services"
-image: "/images/services/startup-593343_1920.jpg"
-ref: services1
-lang: en
+layout: detail
+title: "Publications 1"
+image: "/images/services/server-2160321_1920.jpg"
+ref: publications1
+lang: de
 ---
 
 # lorem

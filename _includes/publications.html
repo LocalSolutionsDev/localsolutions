@@ -1,0 +1,27 @@
+{% assign publications = site.publications | where:"lang", page.lang %}
+<div class="row">
+    {% for publication in publications %}
+    <!-- start .col-md-4 -->
+    <div class="col-lg-4 col-md-6">
+        <!-- start .single-product -->
+        <div class="product product--card3">
+            <div class="product__thumbnail">
+                <img src="{{ publication.image | prepend: site.baseurl | prepend: site.url }}" alt="Image">
+            </div>
+            <!-- end /.product__thumbnail -->
+            <div class="product-desc">
+                <a href="{{site.baseurl}}{{ publication.url }}" class="product_title">
+                    <h4>{{ publication.title }}</h4>
+                </a>
+                <p>{{ publication.content | markdownify | strip_html | truncate: 70 }}</p>
+            </div>
+            <div class="text-left p-2">
+                <a href="{{site.baseurl}}{{ publication.url }}" class="btn btn--default btn--round btn--white">Read more</a>
+            </div>
+        </div>
+        <!-- end /.single-product -->
+    </div>
+    <!-- end /.col-md-4 -->
+    {% endfor %}
+</div>
+<!-- end .row -->

@@ -1,4 +1,5 @@
 ---
+layout: detail
 title: "Leistung 3"
 image: "/images/services/workshop-2209239_1920.jpg"
 ref: services3

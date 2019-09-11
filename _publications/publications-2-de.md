@@ -1,7 +1,8 @@
 ---
-title: "services 1 de"
-image: "/images/services/server-2160321_1920.jpg"
-ref: services1
+layout: detail
+title: "Publications 2"
+image: "/images/services/startup-593343_1920.jpg"
+ref: publications2
 lang: de
 ---
 

@@ -1,4 +1,5 @@
 ---
+layout: detail
 title: "Leistung 2"
 image: "/images/services/startup-593343_1920.jpg"
 ref: services2

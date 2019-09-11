@@ -1,4 +1,5 @@
 ---
+layout: detail
 title: "Services 1"
 image: "/images/services/server-2160321_1920.jpg"
 ref: services1
