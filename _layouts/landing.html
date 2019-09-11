@@ -1,16 +1,15 @@
 ---
 layout: default
-title: Home
-ref: index
-lang: en
-permalink: /
 ---
 <!--================================
         START HERO AREA
 =================================-->
 <section class="hero-area hero--1 bgimage">
+    {% for item in site.data.index.banner.languages %}
+    {% if item.language == page.lang %}
+    {% for it in item.banner %}
     <div class="bg_image_holder">
-        <img src="{{ "/images/2019-07-Mt-Rainier.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="">
+        <img src="{{ it.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ it.image_alt }}">
     </div>
     <!-- start hero-content -->
     <div class="hero-content content_above">
@@ -24,15 +23,15 @@ permalink: /
                     <div class="col-md-12">
                         <div class="hero__content__title">
                             <h1>
-                                <span class="light">Senior Technical Architect.</span>
-                                <span class="bold">Member of ODTUG, IOUG, and RMOUG.</span>
+                                <span class="light">{{ it.text1 }}</span>
+                                <span class="bold">{{ it.text2 }}</span>
                             </h1>
-                            <p class="tagline">Robert Marz is an Oracle ACE and member of its-people GmbH, a Germany based professional services company.</p>
+                            <p class="tagline">{{ it.text3 }}</p>
                         </div>
                         <!-- start .hero__btn-area-->
                         <div class="hero__btn-area">
-                            <a href="#about-me" class="btn btn--round btn--lg">About Me</a>
-                            <a href="#" class="btn btn--round btn--lg">Contact Me</a>
+                            <a href="#about-me" class="btn btn--round btn--lg">{{ it.buttontext1 }}</a>
+                            <a href="#" class="btn btn--round btn--lg">{{ it.buttontext2 }}</a>
                         </div>
                         <!-- end .hero__btn-area-->
                     </div>
@@ -45,6 +44,9 @@ permalink: /
         <!-- end .contact_wrapper -->
     </div>
     <!-- end hero-content -->
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 </section>
 <!--================================
         END HERO AREA
@@ -53,6 +55,9 @@ permalink: /
         START OVERVIEW AREA
     =================================-->
 <section class="overview-area section--padding" id="about-me">
+    {% for item in site.data.index.about.languages %}
+    {% if item.language == page.lang %}
+    {% for it in item.about %}
     <!-- start container -->
     <div class="container">
         <!-- start row -->
@@ -60,8 +65,8 @@ permalink: /
             <!-- start col-md-12 -->
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>About Robert Marz, Co-Owner of Databee, Speaker </h1>
-                    <p>Everything you need to know about me.</p>
+                    <h1>{{ it.heading }}</h1>
+                    <p>{{ it.subheading }}</p>
                 </div>
             </div>
             <!-- end /.col-md-12 -->
@@ -70,7 +75,7 @@ permalink: /
         <div class="row">
             <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                 <div class="overview-icon">
-                    <img src="{{ "/images/Robert-Marz.jpeg" | prepend: site.baseurl | prepend: site.url }}" alt="Robert Marz">
+                    <img src="{{ it.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ it.image_alt }}">
                     <span>
                         <a href="mailto:Robert.Marz@its-people.de">
                             <span class="lnr lnr-envelope info-icon"></span> Robert.Marz@its-people.de </a>
@@ -84,55 +89,47 @@ permalink: /
             </div>
             <!-- end /.col-md-4 -->
             <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                <p>Robert Marz is an Oracle ACE and member of its-people GmbH, a Germany based professional services company.</p>
-
-                <p>At customer sites, he works as a Senior Technical Architect with a database-centric view of the world.</p>
-
-                <p>Robert is Portfolio Manager Database Technologies at its-people. At DOAG (the German Oracle user group), he is in charge of the Cloud topics inside the database community.</p>
-
-                <p>Robert is a member of ODTUG, IOUG, and RMOUG.</p>
-
-                <p>More than twenty years of experience in custom development and data warehouse projects makes him a specialist in Oracle database development and administration.</p>
-
-                <p>Additionally, he is skilled in the fields of scripting languages, operating systems, virtualization and cloud technologies.</p>
-
-                <p>Robert Marz publishes articles and papers in various publications, maintains the its-people portfolio blog and frequently speaks at mostly German conferences. </p>
+                {{ it.text }}
             </div>
             <!-- end /.col-md-5 -->
         </div>
         <!-- end /.row -->
         <div class="row m-5">
             <div class="col-md-4 v_middle">
-                <img src="{{ "/images/O_ACELogo_clr.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" class="img-fluid">
+                <img src="{{ it.image1 | prepend: site.baseurl | prepend: site.url }}" alt="it.image1_alt" class="img-fluid">
             </div>
             <div class="col-md-4 v_middle">
-                <img src="{{ "/images/Home-its-people-de.png" | prepend: site.baseurl | prepend: site.url }}" alt="" class="img-fluid">
+                <img src="{{ it.image2 | prepend: site.baseurl | prepend: site.url }}" alt="it.image2_alt" class="img-fluid">
             </div>
             <div class="col-md-4 v_middle">
-                <img src="{{ "/images/CarajanDB.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="" class="img-fluid">
+                <img src="{{ it.image3 | prepend: site.baseurl | prepend: site.url }}" alt="it.image3_alt" class="img-fluid">
             </div>
         </div>
         <!-- end /.row -->
     </div>
     <!-- end /.container -->
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 </section>
 <!--================================
         END OVERVIEW AREA
     =================================-->
-
 <!--================================
         START FEATURE AREA
     =================================-->
 <section class="feature_start section--padding">
+    {% for item in site.data.index.publication.languages %}
+    {% if item.language == page.lang %}
+    {% for it in item.publication %}
     <!-- start container -->
     <div class="container">
         <div class="row">
             <!-- start col-md-12 -->
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>My Newest Publications
-                    </h1>
-                    <p>Read up on my newest publications</p>
+                    <h1>{{ it.heading }}</h1>
+                    <p>{{ it.subheading }}</p>
                 </div>
             </div>
             <!-- end /.col-md-12 -->
@@ -194,15 +191,20 @@ permalink: /
         <!-- end /.row -->
     </div>
     <!-- end /.container -->
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 </section>
 <!--================================
         END FEATURE AREA
     =================================-->
-
 <!--================================
         START CALL TO ACTION AREA
     =================================-->
 <section class="call-to-action bgimage">
+    {% for item in site.data.index.skills.languages %}
+    {% if item.language == page.lang %}
+    {% for it in item.skills %}
     <div class="bg_image_holder">
         <img src="{{ "/images/2019-07-Seattle.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="">
     </div>
@@ -210,57 +212,66 @@ permalink: /
         <div class="row">
             <div class="col-md-12">
                 <div class="call-to-wrap">
-                    <h1 class="text--white">About my Skills and Experiences</h1>
-                    <h4 class="text--white">Read about my skills and experience</h4>
-                    <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">View my Skills and Experiences</a>
+                    <h1 class="text--white">{{ it.heading }}</h1>
+                    <h4 class="text--white">{{ it.subheading }}</h4>
+                    <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">{{ it.buttontext }}</a>
                 </div>
             </div>
         </div>
     </div>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 </section>
 <!--================================
         END CALL TO ACTION AREA
-    =================================-->
+=================================-->
 <!--================================
         START FEATURE AREA
-    =================================-->
-    <section class="features section--padding">
+=================================-->
+<section class="features section--padding">
+    {% for item in site.data.index.services.languages %}
+    {% if item.language == page.lang %}
+    {% for it in item.services %}
     <!-- start container -->
     <div class="container">
         <div class="row">
             <!-- start col-md-12 -->
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>My services
-                    </h1>
-                    <p>Those are our 3 most popular services</p>
+                    <h1>{{ it.heading }}</h1>
+                    <p>{{ it.subheading }}</p>
                 </div>
             </div>
             <!-- end /.col-md-12 -->
         </div>
+        {% assign services = site.services | where:"lang", page.lang %}
         <!-- start row -->
         <div class="row">
-            {% for service in site.services %}
-                <div class="col-lg-4">
-                    <div class="feature">
-                        <div class="feature__img">
-                            <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="">
-                        </div>
-                        <div class="feature__title">
-                            <h3>{{ service.title }}</h3>
-                        </div>
-                        <div class="feature__desc">
-                            <p>{{ service.content | markdownify | strip_html | truncate: 70 }}</p>
-                        </div>
+            {% for service in services %}
+            <div class="col-lg-4">
+                <div class="feature">
+                    <div class="feature__img">
+                        <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="">
                     </div>
-                    <!-- end /.feature -->
+                    <div class="feature__title">
+                        <h3>{{ service.title }}</h3>
+                    </div>
+                    <div class="feature__desc">
+                        <p>{{ service.content | markdownify | strip_html | truncate: 70 }}</p>
+                    </div>
                 </div>
+                <!-- end /.feature -->
+            </div>
             {% endfor %}
             <!-- end /.col-md-4 -->
         </div>
         <!-- end /.row -->
     </div>
     <!-- end /.container -->
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 </section>
 <!--================================
         END FEATURE AREA

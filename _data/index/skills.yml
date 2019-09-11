@@ -1,0 +1,15 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+# Home Page Skills and Experiences
+languages:
+  - language: "en"
+    skills:
+      - heading: About my Skills and Experiences
+        subheading: Read about my skills and experience
+        buttontext: View my Skills and Experiences
+  - language: "de"
+    skills:
+      - heading: Über meine Fähigkeiten und Erfahrungen
+        subheading: Informieren Sie sich über meine Erfahrungen und Fähigkeiten
+        buttontext: Schauen Sie sich meine Fähigkeiten und Erfahrungen an

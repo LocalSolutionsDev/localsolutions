@@ -1,0 +1,23 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+# Home Page Banner
+languages:
+  - language: "en"
+    banner:
+      - text1: Senior Technical Architect.
+        text2: Member of ODTUG, IOUG, and RMOUG.
+        text3: Robert Marz is an Oracle ACE and member of its-people GmbH, a Germany based professional services company.
+        buttontext1: About Me
+        buttontext2: Contact Me
+        image: "/images/2019-07-Mt-Rainier.jpg"
+        image_alt: banner image
+  - language: "de"
+    banner:
+      - text1: Senior Technical Architect.
+        text2: Mitglied der ODTUG, IOUG und RMOUG.
+        text3: Robert Marz ist ein Oracle ACE und Mitglied der its-people GmbH, eine in Deutschland ansässigen Dienstleistungsfirma.
+        buttontext1: Über mich
+        buttontext2: Kontaktieren Sie mich
+        image: "/images/2019-07-Mt-Rainier.jpg"
+        image_alt: banner image

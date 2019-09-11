@@ -1,0 +1,13 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+# Home Page Publication
+languages:
+  - language: "en"
+    publication:
+      - heading: My Newest Publications
+        subheading: Read up on my newest publications
+  - language: "de"
+    publication:
+      - heading: Meine neusten Publikationen
+        subheading: Informieren Sie sich hier über meine neuesten Publikationen

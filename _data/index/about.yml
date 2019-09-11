@@ -1,0 +1,45 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+# Home Page About
+languages:
+  - language: "en"
+    about:
+      - heading: About Robert Marz, Co-Owner of Databee, Speaker
+        subheading: Everything you need to know about me.
+        image: "/images/Robert-Marz.jpeg"
+        image_alt: Robert Marz
+        text: |
+          <p>Robert Marz is an Oracle ACE and member of its-people GmbH, a Germany based professional services company.</p>
+          <p>At customer sites, he works as a Senior Technical Architect with a database-centric view of the world.</p>
+          <p>Robert is Portfolio Manager Database Technologies at its-people. At DOAG (the German Oracle user group), he is in charge of the Cloud topics inside the database community.</p>
+          <p>Robert is a member of ODTUG, IOUG, and RMOUG.</p
+          <p>More than twenty years of experience in custom development and data warehouse projects makes him a specialist in Oracle database development and administration.</p>
+          <p>Additionally, he is skilled in the fields of scripting languages, operating systems, virtualization and cloud technologies.</p>
+          <p>Robert Marz publishes articles and papers in various publications, maintains the its-people portfolio blog and frequently speaks at mostly German conferences. </p>
+        image1: "/images/O_ACELogo_clr.jpg"
+        image1_alt: alt text
+        image2: "/images/Home-its-people-de.png"
+        image2_alt: alt text
+        image3: "/images/CarajanDB.jpg"
+        image3_alt: alt text
+  - language: "de"
+    about:
+      - heading: Über Robert Marz, Mitinhaber von Databee, Redner
+        subheading: Alles was Sie über mich wissen müssen.
+        image: "/images/Robert-Marz.jpeg"
+        image_alt: Robert Marz
+        text: |
+          <p>Robert Marz verantwortet das Portfoliosegment Datenbanken innerhalb des its-people Verbundes.</p>
+          <p>Als Berater füllt er bei seinen Kunden die Rolle des Senior Technical Architect mit einem datenbankzentrischen Weltbild aus.</p>
+          <p>Robert ist aktives Mitglied der DOAG und hat die die Themenverantwortung für den Cloud-Bereich der Datenbank Community inne.</p>
+          <p>Mehr als zwanzig Jahre Erfahrung in Custom Development und Datawarehouse Projekten haben ihn zu einem Spezialisten für Anwendungsentwicklung und Administration der Oracle Datenbank geformt. Zusätzlich ist er erfahren im Bereich von Scriptsprachen, Betriebssystemen, Virtualisierung und Cloudtechnologien.</p>
+          <p>Robert ist von Oracle als ACE ausgezeichnet worden.</p>
+          <p>Robert veröffentlicht Artikel und Papers in verschieden Publikationen, unterhält den its-people Portfolio Blog und tritt regelmäßig als Sprecher auf Konferenzen in Erscheinung</p>
+        image1: "/images/O_ACELogo_clr.jpg"
+        image1_alt: alt text
+        image2: "/images/Home-its-people-de.png"
+        image2_alt: alt text
+        image3: "/images/CarajanDB.jpg"
+        image3_alt: alt text
+

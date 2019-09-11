@@ -1,0 +1,13 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+# Home Page Publication
+languages:
+  - language: "en"
+    services:
+      - heading: My services
+        subheading: Those are our 3 most popular services
+  - language: "de"
+    services:
+      - heading: Meine Leistungen
+        subheading: Das sind unsere 3 beliebtesten Leistungen
