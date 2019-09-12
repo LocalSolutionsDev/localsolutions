@@ -48,15 +48,11 @@
     font-size: 14px;
     line-height: 24px;
     position: relative;
-    span.article-number {
-      position: absolute;
-      font-weight: 300;
-      font-size: 44px;
-      top: 10px;
-      left: -60px;
-      color: #00b0bd;
-    }
   }
+  li {
+    list-style: initial;
+  }
+
   .content-left-container {
     float: left;
   }

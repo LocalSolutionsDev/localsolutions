@@ -7,7 +7,7 @@ languages:
     links:
     - title: "Home"
       url: /
-    - title: "Skills"
+    - title: "CV"
       url: /skills/
     - title: "Projects"
       url: /projects/
@@ -23,7 +23,7 @@ languages:
     links:
     - title: "Home"
       url: /de/
-    - title: "Skills"
+    - title: "CV"
       url: /de/skills/
     - title: "Projekte"
       url: /de/projects/

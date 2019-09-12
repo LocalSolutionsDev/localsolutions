@@ -6,26 +6,7 @@ lang: en
 permalink: /skills/
 excerpt: MY skillsets
 ---
-
-
-## Robert Marz
-
-    Profilnummer        :       10157
-    Jahrgang        :       1971
-    DV-Erfahrung seit   :       1994
-    Verfügbar ab        :       1.1.2015
-
-## Kontakt
-
-	its-people GmbH
-    Lyoner Straße 44-48
-    60528 Frankfurt am Main
-
-
-    Telefon: +49 69 2475210-0
-    Telefax: +49 69 2475210-21
-    E-Mail: frankfurt@its-people.de
-    Homepage: [www.its-people.de](http://www.its-people.de/)
+{% include skills.html %}
 
 ## Kernkompetenzen
 
