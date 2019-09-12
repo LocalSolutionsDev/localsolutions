@@ -1,18 +1,23 @@
-{% for item in site.data.project.languages %}
-{% if item.language == page.lang %}
-{% for pj in item.projects %}
-<table>
-    <tbody>
-    	<tr>
-            <td> {{ pj.duration }} </td>
-            <td> {{ pj.position }}  </td>
-        </tr>
-        <tr>
-            <td> {{ pj.details }} </td>
-            <td> {{ pj.summary }}  </td>
-        </tr>
-    </tbody>
-</table>
-{% endfor %}
-{% endif %}
-{% endfor %}
+{% assign projects = site.project | where:"lang", page.lang %}
+<section id="conference-timeline">
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+        {% for project in projects %}
+        <div class="timeline-article">
+            <div class="content-left-container">
+                <div class="content-left">
+                    <h5>{{ project.duration }}</h5>
+                    <p>{{ project.position }}</p>
+                </div>
+            </div>
+            <div class="content-right-container">
+                <div class="content-right">
+                    <h4>{{ project.details }}</h4>
+                    <p>{{ project.content }}</p>
+                </div>
+            </div>
+            <div class="meta-date"></div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
