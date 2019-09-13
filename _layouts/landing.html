@@ -122,78 +122,47 @@ layout: default
     {% for item in site.data.index.publication.languages %}
     {% if item.language == page.lang %}
     {% for it in item.publication %}
-    <!-- start container -->
-    <div class="container">
-        <div class="row">
-            <!-- start col-md-12 -->
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h1>{{ it.heading }}</h1>
-                    <p>{{ it.subheading }}</p>
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <!-- start col-md-12 -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>{{ it.heading }}</h1>
+                        <p>{{ it.subheading }}</p>
+                    </div>
                 </div>
+                <!-- end /.col-md-12 -->
             </div>
-            <!-- end /.col-md-12 -->
-        </div>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% assign publications = site.publications | where:"lang", page.lang %}
         <!-- start row -->
         <div class="row">
-            <!-- start search-area -->
+            {% for publication in publications %}
             <div class="col-lg-4">
                 <div class="feature">
                     <div class="feature__img">
-                        <img src="{{ "/images/post-it-notes-1284667_1920.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="feature">
+                        <img src="{{ publication.image | prepend: site.baseurl | prepend: site.url }}" alt="">
                     </div>
                     <div class="feature__title">
-                        <h3>Publication 1</h3>
+                        <a href="{{site.baseurl}}{{ publication.url }}">
+                            <h3>{{ publication.title }}</h3>
+                        </a>
                     </div>
                     <div class="feature__desc">
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
+                        <p>{{ publication.content | markdownify | strip_html | truncate: 70 }}</p>
                     </div>
                 </div>
                 <!-- end /.feature -->
             </div>
-            <!-- end /.col-md-4 -->
-            <!-- start search-area -->
-            <div class="col-lg-4">
-                <div class="feature">
-                    <div class="feature__img">
-                        <img src="{{ "/images/it-business-722950_1280.png" | prepend: site.baseurl | prepend: site.url }}" alt="feature">
-                    </div>
-                    <div class="feature__title">
-                        <h3>Publication 2</h3>
-                    </div>
-                    <div class="feature__desc">
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                </div>
-                <!-- end /.feature -->
-            </div>
-            <!-- end /.col-md-4 -->
-            <!-- start search-area -->
-            <div class="col-lg-4">
-                <div class="feature">
-                    <div class="feature__img">
-                        <img src="{{ "/images/board-564815_1920.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="feature">
-                    </div>
-                    <div class="feature__title">
-                        <h3>Publication 3</h3>
-                    </div>
-                    <div class="feature__desc">
-                        <p>Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
-                            leo quam aliquet diam congue is laoreet elit metus.</p>
-                    </div>
-                </div>
-                <!-- end /.feature -->
-            </div>
+            {% endfor %}
             <!-- end /.col-md-4 -->
         </div>
         <!-- end /.row -->
     </div>
     <!-- end /.container -->
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
 </section>
 <!--================================
         END FEATURE AREA
@@ -255,7 +224,9 @@ layout: default
                         <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="">
                     </div>
                     <div class="feature__title">
-                        <h3>{{ service.title }}</h3>
+                        <a href="{{site.baseurl}}{{ service.url }}">
+                            <h3>{{ service.title }}</h3>
+                        </a>
                     </div>
                     <div class="feature__desc">
                         <p>{{ service.content | markdownify | strip_html | truncate: 70 }}</p>

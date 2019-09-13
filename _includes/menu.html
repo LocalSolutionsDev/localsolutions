@@ -1,33 +1,71 @@
 <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-    	{% for item in site.data.navigation.languages %}
-		{% if item.language == page.lang %}
-		{% for link in item.links %}
-		{% if link.url contains "http" %}
-		{% assign url = link.url %}
-		{% else %}
-		{% assign url = link.url | relative_url %}
-		{% endif %}
-	        <li>
-	            <a href="{{ url }}">{{ link.title }}</a>
-	        </li>
+        {% for item in site.data.navigation.languages %}
+        {% if item.language == page.lang %}
+        {% for link in item.links %}
+        {% if link.url contains "http" %}
+        {% assign url = link.url %}
+        {% else %}
+        {% assign url = link.url | relative_url %}
+        {% endif %}
+        <li>
+            <a href="{{ url }}">{{ link.title }}</a>
+        </li>
         {% endfor %}
-		{% endif %}
-		{% endfor %}
+        {% endif %}
+        {% endfor %}
 
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for page in pages %}
         <li>
-        	<a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
-              {% if page.lang == 'en' %}
-              <span class="flag-icon flag-icon-um"></span>
-            {% else %}
-              <span class="flag-icon flag-icon-de"></span>
-               {% endif %}
-           </a>
+            <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
+                {% if page.lang == 'en' %}
+                <span class="flag-icon flag-icon-um"></span>
+                {% else %}
+                <span class="flag-icon flag-icon-de"></span>
+                {% endif %}
+            </a>
         </li>
-
         {% endfor %}
 
-        </ul>
-    </div>
+        {% assign services=site.services | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in services %}
+        <li>
+            <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
+                {% if page.lang == 'en' %}
+                <span class="flag-icon flag-icon-um"></span>
+                {% else %}
+                <span class="flag-icon flag-icon-de"></span>
+                {% endif %}
+            </a>
+        </li>
+        {% endfor %}
+
+        {% assign publications=site.publications | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in publications %}
+        <li>
+            <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
+                {% if page.lang == 'en' %}
+                <span class="flag-icon flag-icon-um"></span>
+                {% else %}
+                <span class="flag-icon flag-icon-de"></span>
+                {% endif %}
+            </a>
+        </li>
+        {% endfor %}
+
+        {% assign talks=site.talks | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in talks %}
+        <li>
+            <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
+                {% if page.lang == 'en' %}
+                <span class="flag-icon flag-icon-um"></span>
+                {% else %}
+                <span class="flag-icon flag-icon-de"></span>
+                {% endif %}
+            </a>
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>

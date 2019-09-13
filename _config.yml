@@ -71,6 +71,8 @@ collections:
     output: true
   publications:
     output: true
+  events:
+    output: true
 
 defaults:
     -
