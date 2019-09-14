@@ -67,6 +67,7 @@ collections:
     output: true
   talks:
     output: true
+    permalink: /:collection/:title
   services:
     output: true
   publications:
