@@ -54,7 +54,7 @@
                     title:"{{talk.title}}",
                     description: "{{talk.description}}",
                     start: '2019-09-13T07:00:00',
-                    url:"{{site.url }}/{{talk.url}}"
+                    url:"{{site.baseurl }}{{talk.url}}"
                 }
                 {%unless forloop.last %},{%endunless%}
             {% endfor %}
