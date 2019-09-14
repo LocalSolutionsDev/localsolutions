@@ -73,6 +73,8 @@ collections:
     output: true
   events:
     output: true
+  skills:
+    output: true
 
 defaults:
     -

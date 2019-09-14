@@ -71,9 +71,30 @@
      <!-- Page Wrapper -->
     <div id="preload home2 single-vendor">
     {% include header.html %}
-    <div id='calendar'></div>
+    <section class="section--padding4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="shortcode_modules">
+                        <div class="modules__title">
+                            <h1>{{ page.title }}</h1>
+                            <h3> {{ page.subtitle }}</h3>
+                        </div>
+                        <div class="modules__content">
+                            <div id='calendar'></div>
+                            <div class="alert alert-info" role="alert">
+                                <span class="alert_icon lnr lnr-bullhorn"></span>
+                                Click on the event to see more information.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     {% include footer.html %}
-</div>
+    </div>
 </body>
 
 </html>
