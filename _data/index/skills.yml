@@ -7,9 +7,15 @@ languages:
     skills:
       - heading: About my Skills and Experiences
         subheading: Read about my skills and experience
-        buttontext: View my Skills and Experiences
+        buttontext1: View CV and Skills
+        buttonlink1: /skills/
+        buttontext2: View Experiences
+        buttonlink2: /experiences/
   - language: "de"
     skills:
       - heading: Über meine Fähigkeiten und Erfahrungen
         subheading: Informieren Sie sich über meine Erfahrungen und Fähigkeiten
-        buttontext: Schauen Sie sich meine Fähigkeiten und Erfahrungen an
+        buttontext1: Resume ansehen
+        buttonlink1: /de/skills/
+        buttontext2: Erfahrungen ansehen
+        buttonlink2: /de/experiences/
