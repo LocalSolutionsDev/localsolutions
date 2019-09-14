@@ -1,11 +1,8 @@
 {% assign talks = site.talks | where:"lang", page.lang %}
 {% for item in talks %}
 
-item---{{item}}
-item.date---{{item.date}}
 <section id="archive card--category">
 {% assign postsByYear = item.talks | group_by_exp:"item.talks", "item.date | date: '%Y'"  %}
-jsdjf-{{postsByYear}}
 {% for year in postsByYear %}
     {% capture spaceless %}
       {% assign current_year = 'now' | date: '%Y' %}
