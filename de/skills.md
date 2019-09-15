@@ -5,6 +5,7 @@ ref: skills
 lang: de
 permalink: /de/skills/
 excerpt: MY skillsets
+subtitle: Here you can view my professional resume in a practical timeline
 ---
 {% include skills.html %}
 

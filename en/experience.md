@@ -5,6 +5,7 @@ ref: experience
 lang: en
 permalink: /experiences/
 excerpt: My Experiences
+subtitle: Here you can view my experience in different industries and fields of technology
 ---
 
 
