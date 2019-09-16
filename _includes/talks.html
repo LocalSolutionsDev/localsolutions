@@ -1,4 +1,5 @@
 {% assign talks = site.talks | where:"lang", page.lang %}
+{% if page.lang == "de" %} {% assign lang = "/de" %} {% else if %} {% assign lang = "" %} {% endif %}
 <section id="archive card--category">
 
    {% for post in talks %}
@@ -10,7 +11,7 @@
            {% assign myDate = currentDate %}
        {% endif %}
        <li>
-        <a href="{{site.baseurl}}{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a>
+        <a href="{{site.baseurl}}{{lang}}{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a>
       </li>
        {% if forloop.last %}
      </ul>

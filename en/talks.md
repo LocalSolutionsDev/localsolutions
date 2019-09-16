@@ -1,5 +1,5 @@
 ---
-layout: page2
+layout: page
 title: Talks
 ref: talks
 lang: en

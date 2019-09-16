@@ -5,7 +5,7 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-1">
-                <div class="single_blog blog--default">
+                <div class="single_blog blog--default" style="margin-top: 30px;">
                     <article>
                         <div class="blog__content">
                             <h4>{{ page.title }}</h4>
@@ -13,8 +13,8 @@ layout: default
                             <h6>{{page.activity}}<h6>
                         </div>
                         <div class="single_blog_content">
-                            <p>{% if page.bonus %}Bonus-{{page.bonus}}{% endif %}</p>
-                            <p>{% if page.points %}Points-{{page.points}}{% endif %}</p>
+                            {% if page.bonus %}<p>Bonus-{{page.bonus}}</p>{% endif %}
+                            {% if page.points %}<p>Points-{{page.points}}</p>{% endif %}
                             <p>{{page.description}}</p>
                             {{ content }}
                         </div>
