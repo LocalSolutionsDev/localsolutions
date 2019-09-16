@@ -1,4 +1,5 @@
 ---
+layout: talk
 date: 2019-06-25
 lang: de
 ref: talk2
