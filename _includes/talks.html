@@ -1,21 +1,57 @@
 {% assign talks = site.talks | where:"lang", page.lang %}
-{% if page.lang == "de" %} {% assign lang = "/de" %} {% else if %} {% assign lang = "" %} {% endif %}
-<section id="archive card--category">
+<section id="archive">
+{% assign postsByYear = talks | group_by_exp:"talk", "talk.date | date: '%Y'"  %}
+{% for year in postsByYear %}
+    {% capture spaceless %}
+      {% assign current_year = 'now' | date: '%Y' %}
+      {% assign year_text = nil %}
 
-   {% for post in talks %}
-       {% assign currentDate = post.date | date: "%Y" %}
-       {% if currentDate != myDate %}
-           {% unless forloop.first %}</ul>{% endunless %}
-           <h1 class ="anchor-target archive-year" id="{{ currentDate }}">{{ currentDate }}</h1>
-           <ul>
-           {% assign myDate = currentDate %}
-       {% endif %}
-       <li>
-        <a href="{{site.baseurl}}{{lang}}{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a>
-      </li>
-       {% if forloop.last %}
-     </ul>
-     {% endif %}
-   {% endfor %}
+      {% if year.name == current_year %}
+        {% assign year_text = year.name | prepend: "This year's posts (" | append: ')' %}
+      {% else %}
+        {% assign year_text = year.name %}
+      {% endif %}
+    {% endcapture %}
 
+    <div class ="anchor-target archive-year"
+         id="{{ year.name }}">{{ year_text }}</div>
+
+
+  <div class="row">
+  {% assign postsByMonth = year.items | group_by_exp:"talk", "talk.date | date: '%m'" | reversed %}
+  {% for month in postsByMonth %}
+    <div class="col-lg-12">
+
+      <div class="card mb-3">
+        <div class="card-header bg-stripe-zero text-dark pb-0">
+          {% for post in month.items limit:1 %}
+            <p class="anchor-target card-title"
+               id="{{ post.date | date: '%Y-%m' }}"
+               >{{ post.date | date: '%b - %Y' }}</p>
+          {% endfor %}
+        </div>
+        <div class="card-body py-2">
+
+          <div class="archive-list pl-3">
+            {% for post in month.items %}
+            <div class="archive-item d-flex flex-row-reverse">
+              <div class="text-right text-nowrap">
+                  <time class="float-right">{{ post.date | date:"%d %b" }}</time>
+              </div>
+              <div class="mr-auto">
+                  <a href="{{ site.baseurl }}{{ post.url }}">
+                    {{ post.title }}
+                  </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+  </div>
+{% endfor %}
 </section>
