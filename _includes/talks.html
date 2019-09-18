@@ -1,6 +1,8 @@
 {% assign talks = site.talks | where:"lang", page.lang %}
 <section id="archive">
-{% assign postsByYear = talks | group_by_exp:"talk", "talk.date | date: '%Y'"  %}
+{% assign postsByYearData = talks | group_by_exp:"talk", "talk.date | date: '%Y'" %}
+{% assign postsByYear = postsByYearData | reverse %}
+
 {% for year in postsByYear %}
     {% capture spaceless %}
       {% assign current_year = 'now' | date: '%Y' %}
