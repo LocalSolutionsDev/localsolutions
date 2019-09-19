@@ -9,73 +9,79 @@ subtitle: Here you can view my experience in different industries and fields of 
 ---
 
 
-| Branchenkenntnisse 				| 									|
-| ---               				|     ---      						|
-| * ~~Automobilbranche~~  			| * Anlagenbau     					|
-| * ~~Banken~~ 						| * Bahn      						|
-| * ~~Banken~~						| * ~~Beratungsunternehmen~~ 		|
-| * Biotechnologie					| * ~~Chemie~~						|
-| * Dienstleistung					| * ~~EDV-Dienstleistungen~~		|
-| * ~~Finanzdienstleistung~~ 		| * ~~Forschungsinstitut~~			|
-| * Industrie						| * ~~Informations Technologie~~	|
-| * ~~Informations Technologie~~ 	| * Logistik						|
-| * ~~Medien~~						| * Pharmaindustrie					|
-| * ~~Rechtswesen~~					| * ~~Softwarehaus~~				|
-| * ~~Sonstige~~					| * Telekommunikation				|
-| * Transportwesen					| * Verlagswesen					|
-| * Großhandel						|									|
+|Branchenkenntnisse                                                                                     |                      |                |
+|-------------------------------------------------------------------------------------------------------|----------------------|----------------------|
+|* Automobilbranche                                                                                     |* Anlagenbau          |* Banken              |
+|* Bahn                                                                                           |* Beratungsunternehmen|* Biotechnologie|
+|* Chemie                                                                                         |* Dienstleistung|* EDV-Dienstleistungen|
+|* Finanzdienstleistung                                                                           |* Forschungsinstitut  |* Industrie     |
+|* Informations Technologie                                                                       |* Logistik      |* Medien        |
+|* Pharmaindustrie                                                                                |* Rechtswesen   |* Softwarehaus  |
+|* Sonstige                                                                                       |* Telekommunikation   |* Transportwesen|
+|* Verlagswesen                                                                                   |* Großhandel    |                |
 
 
-#### Kenntnisse
-Legende: Expertise-Level (Basiswissen, Professional, Experte), Berufserfahrung Jahre, zuletzt verwendet
-
-| Betriebssysteme 						|										|
-| ---               					|     ---      							|
-| * Linux (Experte,>10,~~2014~~ 2016)	| * ~~Unix (Experte,>10,2014)~~ 		|
-| * Windows (Experte,>10,~~2014~~ 2016)	| * ~~HP-UX (Professional,> 5,2002)~~	|
-| * ~~Sun Solaris (Experte,> 4,2006)~~	|										|
+|Kenntnisse                                                                                             | |
+|-------------------------------------------------------------------------------------------------------|-|
+|Legende: Expertise-Level (Basiswissen, Professional, Experte), Berufserfahrung Jahre, zuletzt verwendet| |
 
 
-| Sprachen 										|											|
-| ---               							|     ---      								|
-| * Shell-Scripts (Experte,>10,~~2014~~ 2016)	| * SQL (Experte,>10,~~2014~~ 2016) 		|
-| * JavaScript (Professional,> 9,~~2014~~ 2016)	| * PL/SQL (Experte,> 10,~~2014~~ 2016) 	|
-| * Node.js										| * XML										|
-| * UML											| * JSON 									|
+|Betriebssysteme	|    Skill-Level       |Berufserfahrung       |Zuletzt verwendet           |
+|-------------------|----------------------|----------------------|-----------------|
+|* Linux 			|Experte               |10 Jahre			  |2016             |
+|* Windows			|Experte               |10 Jahre              |2016             |
+|* Sun Solaris		|Experte               |4 Jahre               |2006             |
+|* HP-UX 			|Professional          |5 Jahre               |2002             |
+|* Unix 			|Experte               |10 Jahre              |2014             |
 
 
-| Datenbanken |	|
-| ---  | --- |
-| * Oracle (Experte,> 10,2016~~2014~~) | |
-
-| Tools 										|																			|
-| ---               							|     ---      																|
-| * VMWare (Professional,> ~~8~~ 9,~~2014~~ 2016)	| * XEN (Professional,> 810,20142016)									|
-| * Oracle ~~JDeveloper~~ SQLDeveloper (Professional,> 7,~~2014~~ 2016)	| * Subversion (Professional,> ~~7~~ 9,~~2014~~ 2016)|
-| * Oracle ~~Discoverer~~ SQLcl (Professional,> 41,~~2009~~ 2016)| * Business ObjectsGit (Professional,> ~~2~~ 3,~~2009~~ 2016)|
-| * ~~Oracle Application Server~~| * ~~Oracle Forms~~ |
-
-
-| Netzwerk 											|													|
-| ---               								|     ---      										|
-| * Firewall (Professional,>10,~~2014~~ 2016)		| * Samba (Experte,> ~~7~~ 10,~~2014~~ 2016) 		|
-| * TCP/IP (Experte,>10,~~2014~~ 2016)	| |
+|Sprachen |Skill-Level           |Berufserfahrung       |Zuletzt verwendet|
+|-------------------------------------------------------------------------------------------------------|----------------------|----------------------|-----------------|
+|* Shell-Scripts |Experte               |10 Jahre              |2016             |
+|* SQL |Experte               |10 Jahre              |2016             |
+|* JavaScript |Professional          |9 Jahre               |2016             |
+|* PL/SQL |Experte               |10 Jahre              |2016             |
+|* Node.js                                                                                              |-                     |-                     |-                |
+|* XML |-                     |-                     |-                |
+|* UML |-                     |-                     |-                |
+|* JSON |-                     |-                     |-                |
 
 
-| Sonstiges |	|
-| ---  | --- |
-| * ~~Olap (Experte,> 9,2014)~~ 					| * Oracle RAC (Professional,> 6,2014)				|
-| * MS-SQL-Server									| * ~~Oracle Reports (Professional,> 6,2008)~~ 		|
-| * Data Warehouse (Experte,> 10,2014)				| * ~~MS-Navision~~ 								|
-| * Custom Development (Experte,>10,2014)			| 													|
-
-#### Aus- und Weiterbildung
-
-| Ausbildung 										|													|
-| ---  												| --- 												|
-| * (Studium der Informatik an der Akademie für Datenverarbeitung, Böblingen)|							|
+|Datenbanken  |Skill-Level           |Berufserfahrung       |Zuletzt verwendet|
+|-------------|----------------------|----------------------|-----------------|
+| Oracle |Experte               |10 Jahre              |2016             |
 
 
-| Fremdsprachen												|													|
-| ---  												 		| --- 												|
-| * Englisch(Experte, >10,2016 ~~2014,>10,Professional~~ ) 	|													|
+|Tools |Skill-Level           |Berufserfahrung       |Zuletzt verwendet|
+|-------------------------------------------------------------------------------------------------------|----------------------|----------------------|-----------------|
+|* VMWare                                                                                               |Professional          |9 Jahre               |2014             |
+|* XEN |Professional          |10 Jahre              |2016             |
+|* Oracle SQLDeveloper                                                                                  |Professional          |7 Jahre               |2016             |
+|* Subversion                                                                                           |Professional          |7 Jahre               |2016             |
+|* Oracle Discoverer SQLcl                                                                              |Professional          |4 Jahre               |2016             |
+|* Business ObjectsGit                                                                                  |Professional          |3 Jahre               |2016             |
+|* Oracle Application Server                                                                            |-                     |-                     |-                |
+|* Oracle Forms                                                                                         |-                     |-                     |-                |
+
+
+|Netzwerk                                                                                               |Skill-Level           |Berufserfahrung       |Zuletzt verwendet|
+|-------------------------------------------------------------------------------------------------------|----------------------|----------------------|-----------------|
+|* Firewall                                                                                             |Professional          |10 Jahre              |2016             |
+|* Samba |Experte               |10 Jahre              |2016             |
+|* TCP/IP                                                                                               |Experte               |10 Jahre              |2016             |
+
+
+|Sonstiges                                                                                              |Skill-Level           |Berufserfahrung       |Zuletzt verwendet|
+|-------------------------------------------------------------------------------------------------------|----------------------|----------------------|-----------------|
+|* Olap (Experte,> 9,2014)                                                                              |Experte               |9 Jahre               |2014             |
+|* Oracle RAC                                                                                           |Professional          |6 Jahre               |2014             |
+|* MS-SQL-Server                                                                                        |-                     |-                     |-                |
+|* Oracle Reports                                                                                       |Professional          |6 Jahre               |2008             |
+|* Data Warehouse                                                                                       |Experte               |10 Jahre              |2014             |
+|* MS-Navision                                                                                          |-                     |-                     |-                |
+|* Custom Development                                                                                   |Experte               |10 Jahre              |2014             |
+
+
+|Fremdsprachen |Skill-Level |Berufserfahrung       |Zuletzt verwendet|
+|---------------|----------------------|----------------------|-----------------|
+|* Englisch | Experte | 10 Jahre |- |
